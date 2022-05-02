@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AirHockey));
             this.gameEngine = new System.Windows.Forms.Timer(this.components);
             this.countdown = new System.Windows.Forms.Label();
             this.secret = new System.Windows.Forms.Label();
@@ -92,7 +93,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("MV Boli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(192, 401);
+            this.button1.Location = new System.Drawing.Point(206, 410);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(263, 63);
             this.button1.TabIndex = 4;
@@ -113,6 +114,7 @@
             this.Controls.Add(this.countdown);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AirHockey";
             this.Text = "Air Hockey";

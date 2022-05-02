@@ -175,11 +175,11 @@ namespace AirHockey
                     {
                         countdown.Text = "Player 2 wins!";
                         countdown.Visible = true;
-                        countdown.Location = new Point(this.Width / 2 - countdown.Width / 2, this.Height / 2 - countdown.Height / 2);
+                        countdown.Location = new Point(this.Width / 2 - countdown.Width / 2, this.Height / 2 - 100);
                         gameEngine.Enabled = false;
 
                         button1.Visible = true;
-                        button1.Location = new Point(this.Width / 2 - button1.Width, 400);
+                        button1.Location = new Point(this.Width / 2 - button1.Width, 300);
                     }
                     else
                     {
@@ -200,10 +200,10 @@ namespace AirHockey
                     {
                         countdown.Text = "Player 1 wins!";
                         countdown.Visible = true;
-                        countdown.Location = new Point(this.Width / 2 - countdown.Width / 2, this.Height / 2 - countdown.Height / 2);
+                        countdown.Location = new Point(this.Width / 2 - countdown.Width / 2, 220);
                         gameEngine.Enabled = false;
 
-                        button1.Location = new Point(this.Width / 2 - button1.Width / 2, 400);
+                        button1.Location = new Point(this.Width / 2 - button1.Width/2, 320);
                         button1.Visible = true;
                     }
                     else
@@ -211,6 +211,7 @@ namespace AirHockey
                         countingDown = true;
                         secret.Text = "p2Goal";
                     }
+
 
                 }
                 else
@@ -322,7 +323,8 @@ namespace AirHockey
             Refresh();
 
             countdown.Visible = false;
-            countingDown = false;            
+            countingDown = false;
+            this.Focus();
             Refresh();
 
         }
